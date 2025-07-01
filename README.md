@@ -203,8 +203,6 @@ gestion-escolar/
 ├── pom.xml
 └── README.md
 
-# Manual de usuario
-Se agrega manual de usuario en documento word dentro de este mismo repositorio con credenciales correctas para ingresar y asi probar las funcionalidades
 ---
 
 
