@@ -1,0 +1,241 @@
+2025-06-29 23:20:24 [main] INFO  c.e.g.GestionEscolarApplication - Starting GestionEscolarApplication using Java 21.0.7 with PID 12892 (C:\Users\angel\OneDrive\Escritorio\prueba-backend\gestion-escolar\target\classes started by angel in C:\Users\angel\OneDrive\Escritorio\prueba-backend\gestion-escolar)
+2025-06-29 23:20:24 [main] INFO  c.e.g.GestionEscolarApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29 23:20:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29 23:20:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29 23:20:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29 23:20:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29 23:20:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29 23:20:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@429f0ca8
+2025-06-29 23:20:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29 23:20:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29 23:20:29 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 32 mappings in 'requestMappingHandlerMapping'
+2025-06-29 23:20:29 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-06-29 23:20:29 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-29 23:20:29 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-29 23:20:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29 23:20:29 [main] INFO  c.e.g.GestionEscolarApplication - Started GestionEscolarApplication in 5.863 seconds (process running for 6.323)
+2025-06-29 23:21:23 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29 23:21:23 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1013aa94
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1c96bf1e
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-29 23:21:23 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 34 ms
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas", parameters={}
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonas()
+2025-06-29 23:21:23 [http-nio-8080-exec-2] INFO  c.e.gestion.service.PersonaService - Obteniendo todas las personas
+2025-06-29 23:21:23 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0
+2025-06-29 23:21:23 [http-nio-8080-exec-2] INFO  c.e.gestion.service.PersonaService - Se encontraron 12 personas
+2025-06-29 23:21:24 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:21:24 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.escuela.gestion.dto.PersonaDTO@56a0304b, com.escuela.gestion.dto.PersonaDTO@735be20e, com.escue (truncated)...]
+2025-06-29 23:21:24 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:54:01 [main] INFO  c.e.g.GestionEscolarApplication - Starting GestionEscolarApplication using Java 21.0.7 with PID 40232 (C:\Users\angel\OneDrive\Escritorio\prueba-backend\gestion-escolar\target\classes started by angel in C:\Users\angel\OneDrive\Escritorio\prueba-backend\gestion-escolar)
+2025-06-29 23:54:01 [main] INFO  c.e.g.GestionEscolarApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-29 23:54:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-29 23:54:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-29 23:54:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-29 23:54:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-29 23:54:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-29 23:54:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@428eb3d5
+2025-06-29 23:54:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-29 23:54:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-29 23:54:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 33 mappings in 'requestMappingHandlerMapping'
+2025-06-29 23:54:05 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-06-29 23:54:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-29 23:54:05 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-29 23:54:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-29 23:54:05 [main] INFO  c.e.g.GestionEscolarApplication - Started GestionEscolarApplication in 4.737 seconds (process running for 5.039)
+2025-06-29 23:54:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-29 23:54:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@75c30a4f
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d5fc340
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-29 23:54:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas", parameters={}
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonas()
+2025-06-29 23:54:41 [http-nio-8080-exec-1] INFO  c.e.gestion.service.PersonaService - Obteniendo todas las personas
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0
+2025-06-29 23:54:41 [http-nio-8080-exec-1] INFO  c.e.gestion.service.PersonaService - Se encontraron 12 personas
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.escuela.gestion.dto.PersonaDTO@4b1bf94a, com.escuela.gestion.dto.PersonaDTO@22a74fba, com.escue (truncated)...]
+2025-06-29 23:54:41 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:54:43 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas", parameters={}
+2025-06-29 23:54:43 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonas()
+2025-06-29 23:54:43 [http-nio-8080-exec-3] INFO  c.e.gestion.service.PersonaService - Obteniendo todas las personas
+2025-06-29 23:54:43 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0
+2025-06-29 23:54:43 [http-nio-8080-exec-3] INFO  c.e.gestion.service.PersonaService - Se encontraron 12 personas
+2025-06-29 23:54:43 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:54:43 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.escuela.gestion.dto.PersonaDTO@1b0ca155, com.escuela.gestion.dto.PersonaDTO@38702f9c, com.escue (truncated)...]
+2025-06-29 23:54:43 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas/paged?page=0&size=3", parameters={masked}
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonasPaged(int, int, String, String)
+2025-06-29 23:55:09 [http-nio-8080-exec-4] INFO  c.e.g.controller.PersonaController - Obteniendo personas paginadas - página: 0, tamaño: 3
+2025-06-29 23:55:09 [http-nio-8080-exec-4] INFO  c.e.gestion.service.PersonaService - Obteniendo personas paginadas: página 0, tamaño 3
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    order by
+        p1_0.id_persona 
+    limit
+        ?, ?
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        count(p1_0.id_persona) 
+    from
+        persona p1_0
+2025-06-29 23:55:09 [http-nio-8080-exec-4] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 4 containing com.escuela.gestion.dto.PersonaDTO instances]
+2025-06-29 23:55:09 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas/paged?page=1&size=2&sortBy=nombre&sortDir=desc", parameters={masked}
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonasPaged(int, int, String, String)
+2025-06-29 23:55:36 [http-nio-8080-exec-5] INFO  c.e.g.controller.PersonaController - Obteniendo personas paginadas - página: 1, tamaño: 2
+2025-06-29 23:55:36 [http-nio-8080-exec-5] INFO  c.e.gestion.service.PersonaService - Obteniendo personas paginadas: página 1, tamaño 2
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    order by
+        p1_0.nombre desc 
+    limit
+        ?, ?
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        count(p1_0.id_persona) 
+    from
+        persona p1_0
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 2 of 6 containing com.escuela.gestion.dto.PersonaDTO instances]
+2025-06-29 23:55:36 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas/paged?page=2&size=3", parameters={masked}
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonasPaged(int, int, String, String)
+2025-06-29 23:57:35 [http-nio-8080-exec-8] INFO  c.e.g.controller.PersonaController - Obteniendo personas paginadas - página: 2, tamaño: 3
+2025-06-29 23:57:35 [http-nio-8080-exec-8] INFO  c.e.gestion.service.PersonaService - Obteniendo personas paginadas: página 2, tamaño 3
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    order by
+        p1_0.id_persona 
+    limit
+        ?, ?
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        count(p1_0.id_persona) 
+    from
+        persona p1_0
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 3 of 4 containing com.escuela.gestion.dto.PersonaDTO instances]
+2025-06-29 23:57:35 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas/paged?page=0&size=5&sortBy=nombre&sortDir=desc", parameters={masked}
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonasPaged(int, int, String, String)
+2025-06-29 23:58:08 [http-nio-8080-exec-9] INFO  c.e.g.controller.PersonaController - Obteniendo personas paginadas - página: 0, tamaño: 5
+2025-06-29 23:58:08 [http-nio-8080-exec-9] INFO  c.e.gestion.service.PersonaService - Obteniendo personas paginadas: página 0, tamaño 5
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    order by
+        p1_0.nombre desc 
+    limit
+        ?, ?
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        count(p1_0.id_persona) 
+    from
+        persona p1_0
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 3 containing com.escuela.gestion.dto.PersonaDTO instances]
+2025-06-29 23:58:08 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.escuela.gestion.exception.GlobalExceptionHandler#handleGeneral(Exception, WebRequest)
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.escuela.gestion.exception.ErrorResponse@1f767dae]
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-06-29 23:59:05 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/HNAP1/", parameters={}
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.escuela.gestion.exception.GlobalExceptionHandler#handleGeneral(Exception, WebRequest)
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.escuela.gestion.exception.ErrorResponse@39f6a699]
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource HNAP1.]
+2025-06-29 23:59:11 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/loginMsg.js", parameters={}
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.escuela.gestion.exception.GlobalExceptionHandler#handleGeneral(Exception, WebRequest)
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.escuela.gestion.exception.ErrorResponse@1e6448f1]
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource loginMsg.js.]
+2025-06-29 23:59:11 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/cgi/get.cgi?cmd=home_login", parameters={masked}
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.escuela.gestion.exception.GlobalExceptionHandler#handleGeneral(Exception, WebRequest)
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.escuela.gestion.exception.ErrorResponse@66d4d845]
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource cgi/get.cgi.]
+2025-06-29 23:59:11 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
