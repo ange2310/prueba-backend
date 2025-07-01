@@ -43,7 +43,7 @@ Este backend implementa un sistema de gestión escolar con CRUD completo para to
 
 2. *Configura la base de datos:*
    - Crea una base de datos en MySQL llamada gestion_escolar.
-   - Ejecuta el script SQL para crear las tablas y datos iniciales, el script sql se encuentra en este mismo repositorio(gestion_escolar.sql)
+   - Ejecuta el script SQL para crear las tablas y datos iniciales, el script sql se encuentra en este mismo repositorio dentro de la carpeta archivosBD (gestion_escolar.sql), además de esto en la misma carpeta se encuentra ubicado el diagrama de la base de datos(modelo relacional)
 
    - Ajusta las credenciales en src/main/resources/application.properties:
      
