@@ -8380,3 +8380,876 @@
 2025-07-01 08:04:51 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
 2025-07-01 08:04:51 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
 2025-07-01 08:04:51 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:19:43 [main] INFO  c.e.g.GestionEscolarApplication - Starting GestionEscolarApplication using Java 21.0.7 with PID 39920 (C:\Users\angel\OneDrive\Escritorio\prueba-backend\gestion-escolar\target\classes started by angel in C:\Users\angel\OneDrive\Escritorio\prueba-backend\gestion-escolar)
+2025-07-01 09:19:43 [main] INFO  c.e.g.GestionEscolarApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-01 09:19:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-01 09:19:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-01 09:19:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-01 09:19:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-01 09:19:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-01 09:19:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@103e7c7c
+2025-07-01 09:19:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-01 09:19:50 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 43 mappings in 'requestMappingHandlerMapping'
+2025-07-01 09:19:50 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-07-01 09:19:50 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-01 09:19:50 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-01 09:19:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-01 09:19:51 [main] INFO  c.e.g.GestionEscolarApplication - Started GestionEscolarApplication in 8.355 seconds (process running for 8.714)
+2025-07-01 09:19:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-01 09:19:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@11eb41f4
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6ba88a47
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-01 09:19:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.AuthController#authenticateUser(LoginRequest)
+2025-07-01 09:19:58 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginRequest(username=patricia.salazar, password=patricia123)]
+2025-07-01 09:19:59 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:19:59 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:19:59 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [LoginResponse(token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXRyaWNpYS5zYWxhemFyIiwiaWF0IjoxNzUxMzc5NTk5LCJ (truncated)...]
+2025-07-01 09:19:59 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes", parameters={}
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantes()
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Carlos, apellido=Pére (truncated)...]
+2025-07-01 09:20:17 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.AuthController#authenticateUser(LoginRequest)
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginRequest(username=patricia.salazar, password=patricia123)]
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [LoginResponse(token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXRyaWNpYS5zYWxhemFyIiwiaWF0IjoxNzUxMzgwNzM3LCJ (truncated)...]
+2025-07-01 09:38:57 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonasPaged(int, int, String, String)
+2025-07-01 09:39:03 [http-nio-8080-exec-6] INFO  c.e.g.controller.PersonaController - Obteniendo personas paginadas - página: 0, tamaño: 10
+2025-07-01 09:39:03 [http-nio-8080-exec-6] INFO  c.e.gestion.service.PersonaService - Obteniendo personas paginadas: página 0, tamaño 10
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    order by
+        p1_0.id_persona 
+    limit
+        ?, ?
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        count(p1_0.id_persona) 
+    from
+        persona p1_0
+2025-07-01 09:39:03 [http-nio-8080-exec-6] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 2 containing com.escuela.gestion.dto.PersonaDTO instances]
+2025-07-01 09:39:03 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:39:07 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/1", parameters={}
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getEstudianteById(Integer)
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Carlos, apellido=Pérez (truncated)...]
+2025-07-01 09:39:09 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/estudiantes/1", parameters={}
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#updateEstudiante(Integer, EstudianteDTO)
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Camilo, apellido=Pérez (truncated)...]
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:39:16 [http-nio-8080-exec-9] INFO  c.e.gestion.service.PersonaService - Guardando persona: Juan Camilo Pérez González
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    where
+        p1_0.id_persona=?
+2025-07-01 09:39:16 [http-nio-8080-exec-9] INFO  c.e.gestion.service.PersonaService - Persona guardada exitosamente con ID: 1
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    left join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        persona 
+    set
+        apellido=?,
+        email=?,
+        fecha_nacimiento=?,
+        nombre=?,
+        telefono=? 
+    where
+        id_persona=?
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Camilo, apellido=Pérez (truncated)...]
+2025-07-01 09:39:16 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:39:16 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/estudiantes", parameters={}
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#createEstudiante(EstudianteDTO)
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [EstudianteDTO(idPersona=null, numeroMatricula=EST2025681, grado=4° Primaria, nombre=roberto, apellid (truncated)...]
+2025-07-01 09:40:06 [http-nio-8080-exec-3] INFO  c.e.gestion.service.PersonaService - Guardando persona: roberto lenis
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        persona
+        (apellido, email, fecha_nacimiento, nombre, telefono) 
+    values
+        (?, ?, ?, ?, ?)
+2025-07-01 09:40:06 [http-nio-8080-exec-3] INFO  c.e.gestion.service.PersonaService - Persona guardada exitosamente con ID: 28
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    left join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        estudiante
+        (grado, numero_matricula, id_persona) 
+    values
+        (?, ?, ?)
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [EstudianteDTO(idPersona=28, numeroMatricula=EST2025681, grado=4° Primaria, nombre=roberto, apellido= (truncated)...]
+2025-07-01 09:40:06 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:40:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/28", parameters={}
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getEstudianteById(Integer)
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [EstudianteDTO(idPersona=28, numeroMatricula=EST2025681, grado=4° Primaria, nombre=roberto, apellido= (truncated)...]
+2025-07-01 09:40:14 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/estudiantes/28", parameters={}
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#updateEstudiante(Integer, EstudianteDTO)
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [EstudianteDTO(idPersona=28, numeroMatricula=EST2025681, grado=4° Primaria, nombre=roberto, apellido= (truncated)...]
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:40:49 [http-nio-8080-exec-4] INFO  c.e.gestion.service.PersonaService - Guardando persona: roberto lenis
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    where
+        p1_0.id_persona=?
+2025-07-01 09:40:49 [http-nio-8080-exec-4] INFO  c.e.gestion.service.PersonaService - Persona guardada exitosamente con ID: 28
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    left join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    update
+        persona 
+    set
+        apellido=?,
+        email=?,
+        fecha_nacimiento=?,
+        nombre=?,
+        telefono=? 
+    where
+        id_persona=?
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [EstudianteDTO(idPersona=28, numeroMatricula=EST2025681, grado=4° Primaria, nombre=roberto, apellido= (truncated)...]
+2025-07-01 09:40:49 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:40:49 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:44:25 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:44:32 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/1", parameters={}
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getEstudianteById(Integer)
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Camilo, apellido=Pérez (truncated)...]
+2025-07-01 09:44:34 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/estudiantes/1", parameters={}
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#updateEstudiante(Integer, EstudianteDTO)
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Camilo, apellido=Pérez (truncated)...]
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:45:08 [http-nio-8080-exec-9] INFO  c.e.gestion.service.PersonaService - Guardando persona: Juan Camilo Pérez González
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    where
+        p1_0.id_persona=?
+2025-07-01 09:45:08 [http-nio-8080-exec-9] INFO  c.e.gestion.service.PersonaService - Persona guardada exitosamente con ID: 1
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    left join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    where
+        e1_0.id_persona=?
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        persona 
+    set
+        apellido=?,
+        email=?,
+        fecha_nacimiento=?,
+        nombre=?,
+        telefono=? 
+    where
+        id_persona=?
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [EstudianteDTO(idPersona=1, numeroMatricula=EST2024001, grado=10°, nombre=Juan Camilo, apellido=Pérez (truncated)...]
+2025-07-01 09:45:08 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/estudiantes/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.EstudianteController#getAllEstudiantesPaged(int, int, String, String)
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        e1_0.id_persona,
+        e1_0.grado,
+        e1_0.numero_matricula,
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        estudiante e1_0 
+    join
+        persona p1_0 
+            on p1_0.id_persona=e1_0.id_persona 
+    order by
+        e1_0.id_persona 
+    limit
+        ?
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.EstudianteDTO instances]
+2025-07-01 09:45:08 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/personas/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.PersonaController#getAllPersonasPaged(int, int, String, String)
+2025-07-01 09:45:21 [http-nio-8080-exec-3] INFO  c.e.g.controller.PersonaController - Obteniendo personas paginadas - página: 0, tamaño: 10
+2025-07-01 09:45:21 [http-nio-8080-exec-3] INFO  c.e.gestion.service.PersonaService - Obteniendo personas paginadas: página 0, tamaño 10
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.apellido,
+        p1_0.email,
+        p1_0.fecha_nacimiento,
+        p1_0.nombre,
+        p1_0.telefono 
+    from
+        persona p1_0 
+    order by
+        p1_0.id_persona 
+    limit
+        ?, ?
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        count(p1_0.id_persona) 
+    from
+        persona p1_0
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 2 containing com.escuela.gestion.dto.PersonaDTO instances]
+2025-07-01 09:45:21 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuario u1_0 
+    where
+        u1_0.username=?
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/profesores/paged?page=0&size=10&sortBy=idPersona&sortDir=asc", parameters={masked}
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.escuela.gestion.controller.ProfesorController#getAllProfesoresPaged(int, int, String, String)
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id_persona,
+        p1_0.especialidad,
+        p1_0.fecha_contratacion,
+        p2_0.id_persona,
+        p2_0.apellido,
+        p2_0.email,
+        p2_0.fecha_nacimiento,
+        p2_0.nombre,
+        p2_0.telefono 
+    from
+        profesor p1_0 
+    join
+        persona p2_0 
+            on p2_0.id_persona=p1_0.id_persona
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Page 1 of 1 containing com.escuela.gestion.dto.ProfesorDTO instances]
+2025-07-01 09:45:30 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:58:16 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-07-01 09:58:16 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-07-01 09:58:16 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:58:16 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api-docs/swagger-config", parameters={}
+2025-07-01 09:58:16 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-07-01 09:58:16 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+2025-07-01 09:58:16 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{configUrl=/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-redir (truncated)...]
+2025-07-01 09:58:16 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-07-01 09:58:16 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api-docs", parameters={}
+2025-07-01 09:58:16 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-07-01 09:58:17 [http-nio-8080-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 794 ms
+2025-07-01 09:58:17 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-07-01 09:58:17 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-07-01 09:58:17 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
